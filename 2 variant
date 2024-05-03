@@ -1,0 +1,6 @@
+@echo off
+dir /A-D /B | find /c /v "" > filelist.txt
+set /p COUNT=<filelist.txt
+echo Кiлькiсть файлiв у каталозi: %COUNT%
+del filelist.txt
+pause
